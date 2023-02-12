@@ -1,0 +1,92 @@
+.hamburger{
+    width: 150px;
+    height: 100px;
+  
+}
+.un{
+    height: 20px;
+    width: 150px;
+    background-color: red;
+    transition: 0.5s;
+}
+.deux{
+    height: 20px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: red;
+    transition: 0.5s;
+}
+.trois{
+    height: 20px;
+    width: 150px;
+    margin-top: 15px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.hamburger:hover .deux{
+    transform: translateX(-300px);
+
+}
+.hamburger:hover .un{
+    transform-origin: left;
+    transform: rotate(27deg);
+
+}
+.hamburger:hover .trois{
+    transform-origin: left;
+    transform: rotate(-27deg);
+ 
+}
+
+.hamburger2{
+    width: 150px;
+    height: 100px;
+  
+}
+.un2{
+    height: 20px;
+    width: 150px;
+    background-color: red;
+    transition: 0.5s;
+}
+.deux2{
+    height: 20px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: red;
+    transition: 0.5s;
+}
+.deux3{
+    position: absolute;
+    height: 20px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: blue;
+    transition: 0.5s;
+}
+.trois2{
+    height: 20px;
+    width: 150px;
+    margin-top: 15px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.hamburger2:hover .deux3{
+    transform: rotate(45deg);
+
+}
+.hamburger2:hover .deux2{
+    transform: rotate(-45deg);
+
+}
+.hamburger2:hover .un2{
+    transform: scale(0);
+   
+
+}
+.hamburger2:hover .trois2{
+    transform: scale(0);
+ 
+}

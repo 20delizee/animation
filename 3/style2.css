@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.D{
+    width: 160px;
+    height: 600px;
+
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    perspective: 40000px;
+}
+.d{
+    width: 500px;
+    height: 500px;
+    transition: 2s;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    animation: d 10s linear infinite;
+    margin-right: 500px;
+}
+
+
+.un{
+    position: absolute;
+    transform: rotateY(0deg);
+    transform-origin: center right;
+}
+
+.deux{
+    position: absolute;
+    transform: rotateY(90deg);
+    transform-origin: center right;
+}
+.trois{
+    position: absolute;
+    transform-origin: center right;
+    transform: rotateY(180deg);
+}
+.quatre{
+    position: absolute;
+    transform-origin: center right;
+    transform: rotateY(270deg);
+}
+
+@keyframes d {
+    0%{transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+}

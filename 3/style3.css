@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.D{
+    width: 160px;
+    height: 600px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+.ca{    
+    perspective: 40000px;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transform-origin: center center -150px;
+    animation: d 10s linear infinite;
+    
+}
+
+
+.un{
+    position: absolute;
+    transform: translate(300px) rotateY(90deg);
+    transform-origin: left;
+}
+
+.deux{
+    position: absolute;
+    transform: translate(-300px) rotateY(-90deg);
+    transform-origin: right;
+}
+.trois{
+    position: absolute;
+    transform-origin: center;
+    transform: translate(300px) rotateY(180deg);
+}
+.trois{
+    position: absolute;
+    transform-origin: center;
+    transform: translateZ(-300px) rotateY(180deg);
+}
+
+@keyframes d {
+    0%{transform: rotate3d(1,0,0,-45deg) rotateY(0deg);}
+    100% {transform:rotate3d(1,0,0,-45deg) rotateY(360deg);}
+}

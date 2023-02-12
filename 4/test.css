@@ -1,0 +1,15 @@
+
+svg{
+    margin-top: 10%;
+    position: absolute;
+    transform: translateY(-300px);
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    pointer-events: none;
+    animation: dawson 2s linear forwards infinite;
+}
+@keyframes dawson{
+    100%
+        {stroke-dashoffset: 0}
+
+}
